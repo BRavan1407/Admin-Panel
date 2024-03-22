@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./img/fevicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a href="index.html" class="text-decoration-none">
+            <div class="sidebar-logo text-center d-flex">
+                <img src="./img/logo.png" alt="Company Logo">
+                <h2 class="sidebar-brand ms-2 fw-bold">ThirdEye</h2>
+            </div>
+        </a>
+        <div class="sidebar-link">
+            <a href="index.html" ><i class="fa-solid fa-house ms-4"></i> Home</a>
+            <a href="category.html"><i class="fa-solid fa-tag ms-4"></i> Category</a>
+            <a href="product.html" ><i class="fas fa-box-open ms-4"></i> Products</a>
+            <a href="orders.html" ><i class="fa-solid fa-box ms-4"></i> Orders</a>
+            <a href="users.html"><i class="fas fa-users ms-4"></i> Users</a>
+            <a href="change_password.html"><i class="fa-solid fa-gear ms-4"></i> Change Password</a>
+            <a href="signin.html" class="active"><i class="fa-solid fa-right-to-bracket ms-4"></i> Sign In</a>
+        </div>
+    </div>
+
+    <!-- Main Content Start -->
+    <div class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-center" style="min-height: 90vh;">
+            <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+                <div class="rounded p-4 p-sm-5 my-4 mx-3" style="background-color: #333;">
+                    <div class="d-flex align-items-center justify-content-between mb-3">
+                        <a href="index.html" class="text-decoration-none">
+                            <h3 class="text-danger"><i class="fa fa-user-edit me-2"></i>ThirdEye</h3>
+                        </a>
+                        <h3 class="text-danger">Sign In</h3>
+                    </div>
+                    <form action="#">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required/>
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="password" placeholder="Password" required/>
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="keepMeSignIn">
+                                <label class="form-check-label text-danger" for="keepMeSignIn">Keep me sign in</label>
+                            </div>
+                            <a href="forget_password.html" class="text-danger text-decoration-none">Forgot Password</a>
+                        </div>
+                        <button type="submit" class="btn btn-danger py-3 w-100 mb-4">Sign In</button>
+                    <p class="text-center text-light mb-0">Don't have an Account? <a href="signup.html" class="text-danger text-decoration-none">Sign Up</a></p>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- Main Content End -->
+
+    <!-- Font Awesome Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
